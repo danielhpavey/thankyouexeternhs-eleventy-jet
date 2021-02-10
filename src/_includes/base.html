@@ -11,8 +11,6 @@
     <link rel="manifest" href="/img/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body class="font-body text-gray-500">
@@ -20,4 +18,18 @@
       {{ content | safe }}
     </main>
   </body>
+  <footer>
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open Sans:300' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  </footer>
 </html>
